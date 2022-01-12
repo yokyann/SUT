@@ -1,0 +1,546 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.videos{
+ position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 68vh;
+  /*padding: 100px;*/
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  z-index: 2;
+}
+.videos video
+{
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.navbar{
+position: absolute;
+display: flex;
+justify-content: space-around;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  z-index: 1000;
+  
+}
+.nav-links{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+li a{
+    
+    text-decoration: none;
+    padding: 1rem 2rem 1rem 2rem;
+    color: rgb(245, 245, 245);
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+.bar{
+    margin-top: 1rem;
+   
+}
+.presentation{
+    position: relative;
+    z-index:10 ; 
+    margin-top: 10rem;
+}
+.presentation .slogan{
+    color: rgb(245, 245, 245);
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    padding-left: 30%;
+    padding-top: 5%;
+}
+.presentation .slogan-p{
+    color: rgb(245, 245, 245);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    padding-left: 30%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+    
+}
+.navbar .logo{
+    color: aliceblue;
+   font-size:30px ;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #606466;
+  mix-blend-mode: overlay;
+}
+.fonctionnement{
+    background: rgb(242, 247, 250);
+}
+.fonction{
+    padding-top: 1%;
+    display: flex;
+    padding-bottom: 10%;
+    flex: 3;
+    
+}
+.img1{
+    background:url(./image/apprentissage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    height:30vh;
+    width: 100%;
+}
+.img2{
+    background:url(./image/financer-sa-formation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    height:30vh;
+    width: 100%;
+}
+.img3{
+    background:url(./image/universite-les-differentes-licences.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    height:30vh;
+    width: 100%;
+}
+
+.card{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    box-shadow: 1px 1px 30px 1px rgb(136, 144, 150);
+    border-radius: 1rem;
+    background: rgb(249, 251, 252);
+    flex: 1;
+}
+.card .text{
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.card .info{
+    padding: 0.7rem;
+    margin-right: 2rem;
+}
+.btn1{
+    font-size: 15px;
+    color: azure;
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    background:linear-gradient(rgb(64, 156, 241),rgb(104, 180, 231))
+}
+.btn2{
+    font-size: 15px;
+    color: azure;
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    background:linear-gradient(rgb(241, 150, 64),rgb(245, 183, 103))
+}
+.btn3{
+    font-size: 15px;
+    color: azure;
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    background:linear-gradient(rgb(168, 241, 84),rgb(142, 247, 111))
+}
+.titre{
+    padding: 1rem;
+}
+.utilisateur{
+    background-color:rgb(242, 247, 250) ;
+}
+.tuteur{
+    display: flex;
+    padding-bottom: 5%;
+    
+   
+}
+.t-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t-img img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.t-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.t-title{
+    margin: 5% 50% 6% 0%;
+}
+.t-p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(75, 78, 80);
+    margin: 0% 30% 10% 0%;
+}
+.student{
+    display: flex;
+    padding-bottom: 5%;
+}
+.st-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.st-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.st-img img{
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+}
+.st-h{
+    margin-left: 20%;
+}
+.st-title{
+    margin: 5% 50% 6% 20%;
+}
+.st-p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(75, 78, 80);
+    margin:0% 20% 6% 20%;
+}
+.t-b{
+    background: rgb(114, 181, 240);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+}
+.st-b{
+    margin-left: 20%;
+    background: rgb(114, 181, 240);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+}
+.footer{
+    
+    padding-bottom: 2rem;
+    background: linear-gradient(rgb(42, 42, 43),rgb(50, 50, 51),rgb(30, 30, 31));
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+.message{
+    display: flex;
+    flex-direction: row;
+}
+/*.logo h1{
+    margin-left: 1rem;
+    color: aliceblue;
+}*/
+.ftlist{
+    margin-top: 1rem;
+    list-style: none;
+
+}
+.ftlist li{
+    color: aliceblue;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.message h1{
+    color: aliceblue;
+}
+.mail{
+    margin-top: 1rem;
+    padding: 0.7rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+.msg{
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+.submit{
+    background: rgb(239, 242, 245);
+    padding: 0.6rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    color: rgb(20, 48, 71);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.end img{
+    height: 4rem;
+    width: 4rem;
+}
+.end ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.end li{
+    padding: 0rem 1rem;
+   
+}
+.nav-links img{
+    height: 25px;
+    width: 25px;
+}
+.ftlist img{
+    height: 1rem;
+    width: 1rem;
+}
+svg{
+    z-index: 10;
+}
+
+@media screen and (max-width:1000px) {
+    .logo img{
+        height: 2em;
+        width: 6em;
+    }
+    .nav-links{
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0.5em;
+    }
+    li a{
+        
+        text-decoration: none;
+       /* padding: 1rem 2rem 1rem 2rem;*/
+        color: rgb(245, 245, 245);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+    }
+    .nav-links img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .f-logo-img{
+        height: 2em;
+        width: 6em;
+    }
+
+}
+
+@media screen and (max-width:842px) {
+    .message{
+        display: none;
+    }
+    .presentation .slogan{
+      font-size: 3em; 
+      padding-left: 20%;
+
+    }
+    .presentation .slogan-p{
+        
+      font-size: 1.5em; 
+      padding-left: 20%;
+        
+       
+    }
+    
+    
+    .fonction{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin:0% 20%;
+        padding:10% 0%;
+    }
+    .st-img,.t-img{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .st-img img,.t-img img{
+        border-radius: 50%;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    
+}
+@media screen and (max-width:669px) {
+    .logo img{
+        height: 1.5em;
+        width: 3.5em;
+    }
+    
+    li a{
+        font-size: 0.7em;
+    }
+    .nav-links img{
+        height: 1.2rem;
+        width: 1.2rem;
+    }  
+    .presentation .slogan{
+        font-size: 2em; 
+        padding-left: 20%;
+  
+      }
+      .presentation .slogan-p{
+          
+        font-size: 1.5em; 
+        padding-left: 20%;
+          
+         
+      }
+    .titre{
+        padding: 0.4rem;
+        font-size: 1em;
+    }  
+    .card .text{
+        padding: 0.4rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .card .info{
+        padding: 0.4rem;
+        margin-right: 0.6rem;
+        font-size: 0.8em;
+    } 
+    .img1,.img2,.img3{
+        height: 20vh;
+    }
+    .utilisateur{
+        padding-top: 10%;
+    }
+    .t-title,.st-title{
+        font-size: 1em;
+    }
+    .t-p,.st-p{
+       
+        font-size: 0.8em;
+    }
+    .st-b,.t-b{
+        
+        background: rgb(114, 181, 240);
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+        border: none;
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+    
+    } 
+    .st-img img,.t-img img{
+        border-radius: 50%;
+        height: 12rem;
+        width: 12rem;
+    }
+    .ftlist{
+        font-size: 0.7em;
+    }
+    .end{
+        padding-top:10% ;
+    }
+
+    
+}
+@media screen and (max-width:488px) {
+    .logo img{
+        margin-top: 0.8em;
+        height: 1em;
+        width: 3em;
+    }
+    
+    li a{
+        font-size: 0.5em;
+    }
+    .nav-links img{
+        
+        height: 0.5rem;
+        width: 0.5rem;
+    }  
+    .presentation .slogan{
+        font-size: 1em; 
+        padding-left: 20%;
+  
+      }
+      .presentation .slogan-p{
+          
+        font-size: 1em; 
+        padding-left: 20%;
+       
+         
+      }
+      .svg{
+          display: none;
+      }
+      .t-title,.st-title{
+        font-size: 0.8em;
+    }
+    .t-p,.st-p{
+       
+        font-size: 0.7em;
+    }
+    .st-b,.t-b{
+        
+        background: rgb(114, 181, 240);
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+        border: none;
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8em;
+    
+    } 
+    .st-img img,.t-img img{
+        border-radius: 50%;
+        height: 10rem;
+        width: 10rem;
+    }
+    .titre{
+        font-size: 0.8em;
+    }
+    
+      
+      
+}
